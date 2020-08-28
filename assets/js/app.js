@@ -150,11 +150,11 @@ const handlerResult = (e) => {
 const getTikTacToe = (e) => {
   count++;
   if (currentChoice) {
-    e.innerHTML = `<span class="material-icons-outlined">clear</span>`;
+    e.innerHTML = `<span class="material-icons-outlined p-2">clear</span>`;
     e.classList.add("disabled");
     gameState[e.value - 1] = "x";
   } else {
-    e.innerHTML = `<span class="material-icons-outlined">fiber_manual_record</span>`;
+    e.innerHTML = `<span class="material-icons-outlined p-2">fiber_manual_record</span>`;
     e.classList.add("disabled");
     gameState[e.value - 1] = "o";
   }
@@ -199,7 +199,7 @@ const handlerReset = () => {
     resetList[i].classList.remove("disabled");
     resetList[
       i
-    ].innerHTML = `<span class="material-icons text-light">check_box_outline_blank</span>`;
+    ].innerHTML = `<span class="material-icons text-light p-2">check_box_outline_blank</span>`;
     gameState[i] = "";
     winner = "";
     draw = false;

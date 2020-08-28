@@ -1,0 +1,9 @@
+.focus-none:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.active-none:active {
+    box-shadow: none;
+    outline: none;
+}

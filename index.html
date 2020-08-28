@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <title>tikTacToe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <script src="assets/js/app.js" defer></script>
+</head>
+
+<body class="text-secondary">
+    <div class="p-4" id="navbarSupportedContent">
+        <form class="w-lg-50 w-100 d-flex mr-auto" action="" id="form-info">
+            <input id="first-player" name="firstPlayer"
+                class="form-control mr-sm-2 mx-2 focus-none active-none border-0 bg-light" type="text"
+                placeholder="First Player" autocomplete="off">
+            <input id="second-player" name="secondPlayer"
+                class="form-control mr-sm-2 mx-2 focus-none active-none border-0 bg-light" type="text"
+                placeholder="Second Player" autocomplete="off">
+            <button id="submit-btn" type="submit"
+                class="btn btn-warning text-white focus-none active-none mx-2 shadow-sm">Submit</button>
+        </form>
+    </div>
+    <div class='container'>
+        <div id="board" class="card d-none">
+            <div class="card-body w-100">
+                <button id="reset-btn"
+                    class="btn btn-warning text-white mx-2 focus-none active-none shadow-sm">Rematch</button>
+                <span class="mx-3"><b>Total round : </b><span id="match1">0</span></span>
+                <span id="card-header" class="card-title mx-5 h4 text-center"></span>
+                <div class="d-flex m-2">
+                    <div class="row">
+                        <div class="col-lg-5 col-12">
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="list-group">
+                                        <li class="list-group-item bg-light border-0"><b>First Player</b></li>
+                                        <li id="name1" class="list-group-item bg-light border-0"><span
+                                                class="text-success">Player A</span></li>
+                                        <li class="list-group-item bg-light border-0"><b>Win : </b><span
+                                                id="win1">0</span>
+                                        </li>
+                                        <li class="list-group-item bg-light border-0"><b>Lose : </b><span
+                                                id="lose1">0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="w-100 p-2"></div>
+                                <div class="col">
+                                    <ul class="list-group">
+                                        <li class="list-group-item bg-light border-0"><b>Second Player</b></li>
+                                        <li id="name2" class="list-group-item bg-light border-0"><span
+                                                class="text-danger">Player B</span></li>
+                                        <li class="list-group-item bg-light border-0"><b>Win : </b><span
+                                                id="win2">0</span>
+                                        </li>
+                                        <li class="list-group-item bg-light border-0"><b>Lose : </b><span
+                                                id="lose2">0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="card-body" class="col-6 m-auto">
+                            <div class="d-flex">
+                                <div><button id="box-1" value="1"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                                <div><button id="box-2" value="2"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                                <div><button id="box-3" value="3"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div><button id="box-4" value="4"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                                <div><button id="box-5" value="5"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                                <div><button id="box-6" value="6"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div><button id="box-7" value="7"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                                <div><button id="box-8" value="8"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                                <div><button id="box-9" value="9"
+                                        class="btn btn-light p-5 m-1 focus-none active-none"><span
+                                            class="material-icons text-light">check_box_outline_blank</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div id="info" class="card-body h1">
+                Fill your name above
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

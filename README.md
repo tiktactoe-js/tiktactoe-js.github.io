@@ -1,1 +1,1 @@
-# tiktactoe-js.github.io
+# tiktactoegame.github.io
